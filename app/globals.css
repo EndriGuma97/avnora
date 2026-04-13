@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #2d3440;
+  --navy-dark: #1a1f2e;
+  --navy-light: #3d4555;
+  --gold: #b8976a;
+  --gold-light: #d4aa7d;
+  --gold-pale: #e8d5b7;
+  --cream: #f0e6d3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy-dark);
+  color: var(--cream);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Gold divider */
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b8976a, transparent);
+  margin: 0 auto;
+}
+
+/* Ornament */
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  color: #b8976a;
+  opacity: 0.5;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.ornament::before,
+.ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b8976a);
+  max-width: 80px;
+}
+
+.ornament::after {
+  background: linear-gradient(90deg, #b8976a, transparent);
+}
+
+/* Prose styles for blog content */
+.prose-av h2 {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #b8976a;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.prose-av h3 {
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  color: #d4aa7d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-av p {
+  color: #c8c8c8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose-av blockquote {
+  border-left: 2px solid #b8976a;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #b8976a;
+  margin: 1.5rem 0;
+}
+
+.prose-av ul, .prose-av ol {
+  color: #c8c8c8;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-av li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1f2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8976a44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8976a88;
+}
+
+/* Button styles */
+.btn-gold {
+  background: transparent;
+  border: 1px solid #b8976a;
+  color: #b8976a;
+  padding: 12px 28px;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-gold:hover {
+  background: #b8976a;
+  color: #1a1f2e;
+}
+
+.btn-gold-filled {
+  background: #b8976a;
+  border: 1px solid #b8976a;
+  color: #1a1f2e;
+  padding: 13px 32px;
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-gold-filled:hover {
+  background: #d4aa7d;
+  border-color: #d4aa7d;
+}
+
+/* Full-width buttons on mobile */
+@media (max-width: 480px) {
+  .btn-gold,
+  .btn-gold-filled {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+
+/* Section title style */
+.section-title {
+  font-family: Georgia, serif;
+  color: #b8976a;
+  letter-spacing: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(184, 151, 106, 0.1);
+}
+.card-hover:hover {
+  border-color: rgba(184, 151, 106, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Touch devices — disable hover transform */
+@media (hover: none) {
+  .card-hover:hover {
+    transform: none;
+    border-color: rgba(184, 151, 106, 0.25);
+  }
+}
