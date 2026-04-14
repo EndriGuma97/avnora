@@ -32,7 +32,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#1a1f2e]/95 backdrop-blur-md border-b border-[#b8976a]/10 py-2'
+          ? 'bg-[#faf9f7]/95 backdrop-blur-md border-b border-[#b8976a]/15 py-2'
           : 'bg-transparent py-3 md:py-5'
       }`}
     >
@@ -46,8 +46,8 @@ export default function Header() {
             height={164}
             className={`transition-all duration-500 w-auto ${
               scrolled
-                ? 'h-14 md:h-16'
-                : 'h-16 md:h-24'
+                ? 'h-16 md:h-20'
+                : 'h-20 md:h-28'
             }`}
             priority
           />
@@ -102,7 +102,7 @@ export default function Header() {
           menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-[#1a1f2e] border-t border-[#b8976a]/10 px-6 py-6 flex flex-col gap-1">
+        <div className="bg-[#faf9f7] border-t border-[#b8976a]/15 px-6 py-6 flex flex-col gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}

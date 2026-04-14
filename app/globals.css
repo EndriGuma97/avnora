@@ -23,8 +23,8 @@ html {
 }
 
 body {
-  background-color: var(--navy-dark);
-  color: var(--cream);
+  background-color: #faf9f7;
+  color: #1a1f2e;
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 .prose-av p {
-  color: #c8c8c8;
+  color: #5a6272;
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .prose-av ul, .prose-av ol {
-  color: #c8c8c8;
+  color: #5a6272;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -111,7 +111,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1f2e;
+  background: #f0ede8;
 }
 ::-webkit-scrollbar-thumb {
   background: #b8976a44;

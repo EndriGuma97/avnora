@@ -17,7 +17,7 @@ export default function KontaktPage() {
         <div className="relative max-w-4xl mx-auto px-5 text-center">
           <p className="section-title mb-5">Na Gjeni</p>
           <h1
-            className="text-[#e8d5b7]"
+            className="text-[#1a1f2e]"
             style={{
               fontFamily: 'Georgia, serif',
               fontSize: 'clamp(26px, 5vw, 50px)',
@@ -29,8 +29,7 @@ export default function KontaktPage() {
           </h1>
           <div className="gold-divider mt-5 mb-6" />
           <p
-            className="text-[#c8c8c8] max-w-xl mx-auto leading-relaxed text-sm md:text-base"
-            style={{ opacity: 0.7 }}
+            className="text-[#5a6272] max-w-xl mx-auto leading-relaxed text-sm md:text-base"
           >
             Jemi të gatshëm t&apos;ju ndihmojmë. Na kontaktoni për konsultim fillestar
             ose për çdo pyetje lidhur me shërbimet tona.
@@ -64,7 +63,7 @@ export default function KontaktPage() {
                   </p>
                   <a
                     href="tel:+38345420656"
-                    className="text-[#e8d5b7] text-base md:text-lg hover:text-[#b8976a] transition-colors"
+                    className="text-[#1a1f2e] text-base md:text-lg hover:text-[#b8976a] transition-colors"
                     style={{ fontFamily: 'Georgia, serif' }}
                   >
                     +383 45 420 656
@@ -89,7 +88,7 @@ export default function KontaktPage() {
                   </p>
                   <a
                     href="mailto:av.contracts.ks@gmail.com"
-                    className="text-[#e8d5b7] text-sm md:text-base hover:text-[#b8976a] transition-colors break-all"
+                    className="text-[#1a1f2e] text-sm md:text-base hover:text-[#b8976a] transition-colors break-all"
                     style={{ fontFamily: 'Georgia, serif' }}
                   >
                     av.contracts.ks@gmail.com
@@ -112,7 +111,7 @@ export default function KontaktPage() {
                   >
                     Orari i Punës
                   </p>
-                  <p className="text-[#e8d5b7] text-sm md:text-base" style={{ fontFamily: 'Georgia, serif' }}>
+                  <p className="text-[#1a1f2e] text-sm md:text-base" style={{ fontFamily: 'Georgia, serif' }}>
                     E Hënë – E Premte
                   </p>
                   <p className="text-[#b8976a] mt-0.5 text-lg md:text-xl" style={{ fontFamily: 'Georgia, serif', letterSpacing: '2px' }}>
@@ -123,7 +122,7 @@ export default function KontaktPage() {
             </div>
 
             {/* Tagline box */}
-            <div className="mt-8 md:mt-12 p-5 md:p-6 border border-[#b8976a]/15 bg-[#2d3440]">
+            <div className="mt-8 md:mt-12 p-5 md:p-6 border border-[#b8976a]/20 bg-[#f0ede8]">
               <p
                 className="text-[#b8976a] mb-2"
                 style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
@@ -131,13 +130,13 @@ export default function KontaktPage() {
                 Moto jonë
               </p>
               <p
-                className="text-[#e8d5b7] text-sm md:text-base"
+                className="text-[#1a1f2e] text-sm md:text-base"
                 style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic', lineHeight: 1.7 }}
               >
                 &ldquo;Kontrata e sigurt është themeli i së ardhmes tuaj&rdquo;
               </p>
               <div
-                className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[#b8976a]/40"
+                className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[#b8976a]/50"
                 style={{ fontFamily: 'Georgia, serif', fontSize: '9px', letterSpacing: '2px' }}
               >
                 <span>KUPTUESHMËRI</span>
@@ -183,7 +182,7 @@ function ContactForm() {
           type="text"
           name="name"
           required
-          className="w-full bg-[#2d3440] border border-[#b8976a]/20 text-[#e8d5b7] px-4 py-3 focus:outline-none focus:border-[#b8976a]/60 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
           placeholder="Emri dhe Mbiemri"
         />
       </div>
@@ -199,7 +198,7 @@ function ContactForm() {
           type="email"
           name="email"
           required
-          className="w-full bg-[#2d3440] border border-[#b8976a]/20 text-[#e8d5b7] px-4 py-3 focus:outline-none focus:border-[#b8976a]/60 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
           placeholder="emailijuaj@email.com"
         />
       </div>
@@ -214,7 +213,7 @@ function ContactForm() {
         <input
           type="tel"
           name="telefon"
-          className="w-full bg-[#2d3440] border border-[#b8976a]/20 text-[#e8d5b7] px-4 py-3 focus:outline-none focus:border-[#b8976a]/60 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
           placeholder="+383 XX XXX XXX"
         />
       </div>
@@ -228,7 +227,7 @@ function ContactForm() {
         </label>
         <select
           name="sherbimi"
-          className="w-full bg-[#2d3440] border border-[#b8976a]/20 text-[#e8d5b7] px-4 py-3 focus:outline-none focus:border-[#b8976a]/60 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
         >
           <option value="">— Zgjidhni shërbimin —</option>
           <option value="Kontrata Familjare">Kontrata Familjare</option>
@@ -236,7 +235,7 @@ function ContactForm() {
           <option value="Real Estate">Real Estate</option>
           <option value="Ankesa & Peticione">Ankesa &amp; Peticione</option>
           <option value="Marrëveshje">Marrëveshje</option>
-          <option value="Vlerësime Ligjore">Vlerësime Ligjore</option>
+          <option value="Konsultime Ligjore">Konsultime Ligjore</option>
           <option value="Tjera">Tjera</option>
         </select>
       </div>
@@ -252,7 +251,7 @@ function ContactForm() {
           name="mesazhi"
           required
           rows={5}
-          className="w-full bg-[#2d3440] border border-[#b8976a]/20 text-[#e8d5b7] px-4 py-3 focus:outline-none focus:border-[#b8976a]/60 transition-colors resize-none text-sm md:text-base"
+          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors resize-none text-sm md:text-base"
           placeholder="Përshkruani shkurtimisht nevojën tuaj ligjore..."
         />
       </div>
@@ -261,7 +260,7 @@ function ContactForm() {
         Dërgo Mesazhin
       </button>
 
-      <p className="text-[#c8c8c8] text-xs text-center" style={{ opacity: 0.4 }}>
+      <p className="text-[#5a6272] text-xs text-center" style={{ opacity: 0.7 }}>
         Do t&apos;ju përgjigjemi brenda 24 orëve të punës.
       </p>
     </form>

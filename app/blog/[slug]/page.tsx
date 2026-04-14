@@ -54,7 +54,7 @@ const portableComponents = {
       <blockquote style={{ borderLeft: '2px solid #b8976a', paddingLeft: '1rem', fontStyle: 'italic', color: '#b8976a', margin: '1.5rem 0' }}>{children}</blockquote>
     ),
     normal: ({ children }: { children?: React.ReactNode }) => (
-      <p style={{ color: '#c8c8c8', lineHeight: '1.85', marginBottom: '1rem', opacity: 0.8 }}>{children}</p>
+      <p style={{ color: '#5a6272', lineHeight: '1.85', marginBottom: '1rem' }}>{children}</p>
     ),
   },
 }
@@ -100,7 +100,7 @@ export default async function BlogPostPage({
             </span>
           )}
           <h1
-            className="text-[#e8d5b7] mt-4 mb-6"
+            className="text-[#1a1f2e] mt-4 mb-6"
             style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(22px, 4vw, 40px)', lineHeight: 1.4, fontWeight: 400 }}
           >
             {post.title}
@@ -117,8 +117,8 @@ export default async function BlogPostPage({
           )}
           {post.excerpt && (
             <p
-              className="text-[#c8c8c8] mt-6 leading-relaxed"
-              style={{ fontSize: '16px', fontStyle: 'italic', opacity: 0.65, fontFamily: 'Georgia, serif' }}
+              className="text-[#5a6272] mt-6 leading-relaxed"
+              style={{ fontSize: '16px', fontStyle: 'italic', fontFamily: 'Georgia, serif' }}
             >
               {post.excerpt}
             </p>
