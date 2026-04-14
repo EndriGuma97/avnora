@@ -42,8 +42,8 @@ export default function Header() {
           <Image
             src="/logo.svg"
             alt="AV Contracts L.L.C. — Avnora Avdijaj"
-            width={160}
-            height={164}
+            width={82}
+            height={112}
             className={`transition-all duration-500 w-auto ${
               scrolled
                 ? 'h-16 md:h-20'

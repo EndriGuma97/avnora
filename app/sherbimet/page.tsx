@@ -110,7 +110,7 @@ const serviceCategories = [
       { name: 'Ngritje Padie për Fitimin e Humbur', desc: 'Vlerësim i dëmeve materiale dhe të drejtës për kompensim kontraktual.' },
       { name: 'Shpërblim Dëmi Material dhe Moral', desc: 'Analiza e bazave ligjore kontraktuale për kërkim kompensimi.' },
       { name: 'Cenim Dinjiteti', desc: 'Vlerësim i rasteve të cenimi të dinjitetit personal dhe profesional.' },
-      { name: 'Pasurimi pa Bazë Ligjore', desc: 'Vlerësim i rasteve kur person/kompani dyshohet për pasurим të paligjshëm.' },
+      { name: 'Pasurimi pa Bazë Ligjore', desc: 'Vlerësim i rasteve kur person/kompani dyshohet për pasurimit të paligjshëm.' },
     ],
   },
 ]
