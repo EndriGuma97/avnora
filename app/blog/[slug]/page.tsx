@@ -45,13 +45,13 @@ export async function generateMetadata({
 const portableComponents = {
   block: {
     h2: ({ children }: { children?: React.ReactNode }) => (
-      <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.4rem', color: '#b8976a', marginTop: '2rem', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{children}</h2>
+      <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.4rem', color: '#c4a882', marginTop: '2rem', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>{children}</h2>
     ),
     h3: ({ children }: { children?: React.ReactNode }) => (
-      <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.15rem', color: '#d4aa7d', marginTop: '1.5rem', marginBottom: '0.5rem' }}>{children}</h3>
+      <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.15rem', color: '#d9bc9c', marginTop: '1.5rem', marginBottom: '0.5rem' }}>{children}</h3>
     ),
     blockquote: ({ children }: { children?: React.ReactNode }) => (
-      <blockquote style={{ borderLeft: '2px solid #b8976a', paddingLeft: '1rem', fontStyle: 'italic', color: '#b8976a', margin: '1.5rem 0' }}>{children}</blockquote>
+      <blockquote style={{ borderLeft: '2px solid #c4a882', paddingLeft: '1rem', fontStyle: 'italic', color: '#c4a882', margin: '1.5rem 0' }}>{children}</blockquote>
     ),
     normal: ({ children }: { children?: React.ReactNode }) => (
       <p style={{ color: '#5a6272', lineHeight: '1.85', marginBottom: '1rem' }}>{children}</p>
@@ -85,7 +85,7 @@ export default async function BlogPostPage({
   return (
     <>
       {/* Header */}
-      <section className="pt-44 pb-16 relative overflow-hidden border-b border-[#b8976a]/10">
+      <section className="pt-44 pb-16 relative overflow-hidden border-b border-[#c4a882]/10">
         <div
           className="absolute inset-0"
           style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(184,151,106,0.05) 0%, transparent 70%)' }}
@@ -93,7 +93,7 @@ export default async function BlogPostPage({
         <div className="relative max-w-3xl mx-auto px-6 text-center">
           {post.category && (
             <span
-              className="text-[#b8976a] text-xs tracking-widest uppercase"
+              className="text-[#c4a882] text-xs tracking-widest uppercase"
               style={{ fontFamily: 'Georgia, serif' }}
             >
               {categoryLabels[post.category] || post.category}
@@ -107,7 +107,7 @@ export default async function BlogPostPage({
           </h1>
           <div className="gold-divider mb-6" />
           {post.publishedAt && (
-            <p className="text-[#b8976a]/50 text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
+            <p className="text-[#c4a882]/50 text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
               {new Date(post.publishedAt).toLocaleDateString('sq-AL', {
                 year: 'numeric',
                 month: 'long',
@@ -137,10 +137,10 @@ export default async function BlogPostPage({
 
       {/* Back */}
       <div className="max-w-3xl mx-auto px-6 pb-16">
-        <div className="border-t border-[#b8976a]/10 pt-8 flex items-center justify-between">
+        <div className="border-t border-[#c4a882]/10 pt-8 flex items-center justify-between">
           <Link
             href="/blog"
-            className="text-[#b8976a] text-xs tracking-widest hover:text-[#d4aa7d] transition-colors"
+            className="text-[#c4a882] text-xs tracking-widest hover:text-[#d9bc9c] transition-colors"
             style={{ fontFamily: 'Georgia, serif' }}
           >
             ← TË GJITHË ARTIKUJT

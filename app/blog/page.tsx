@@ -35,7 +35,7 @@ export default async function BlogPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-44 pb-20 relative overflow-hidden border-b border-[#b8976a]/15">
+      <section className="pt-44 pb-20 relative overflow-hidden border-b border-[#c4a882]/15">
         <div
           className="absolute inset-0"
           style={{
@@ -66,7 +66,7 @@ export default async function BlogPage() {
         {posts.length === 0 ? (
           <div className="text-center py-20">
             <div
-              className="text-[#b8976a] mb-4"
+              className="text-[#c4a882] mb-4"
               style={{ fontFamily: 'Georgia, serif', fontSize: '48px', opacity: 0.3 }}
             >
               Ω
@@ -91,14 +91,14 @@ export default async function BlogPage() {
               >
                 {post.category && (
                   <span
-                    className="text-[#b8976a] text-xs tracking-widest uppercase"
+                    className="text-[#c4a882] text-xs tracking-widest uppercase"
                     style={{ fontFamily: 'Georgia, serif' }}
                   >
                     {categoryLabels[post.category] || post.category}
                   </span>
                 )}
                 <h2
-                  className="text-[#1a1f2e] mt-3 mb-3 group-hover:text-[#b8976a] transition-colors"
+                  className="text-[#1a1f2e] mt-3 mb-3 group-hover:text-[#c4a882] transition-colors"
                   style={{ fontFamily: 'Georgia, serif', fontSize: '17px', lineHeight: 1.5 }}
                 >
                   {post.title}
@@ -109,7 +109,7 @@ export default async function BlogPage() {
                   </p>
                 )}
                 {post.publishedAt && (
-                  <p className="text-[#b8976a]/50 text-xs mt-4 tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
+                  <p className="text-[#c4a882]/50 text-xs mt-4 tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
                     {new Date(post.publishedAt).toLocaleDateString('sq-AL', {
                       year: 'numeric',
                       month: 'long',
@@ -117,7 +117,7 @@ export default async function BlogPage() {
                     })}
                   </p>
                 )}
-                <div className="mt-4 text-[#b8976a] text-xs tracking-widest group-hover:tracking-[4px] transition-all duration-300" style={{ fontFamily: 'Georgia, serif' }}>
+                <div className="mt-4 text-[#c4a882] text-xs tracking-widest group-hover:tracking-[4px] transition-all duration-300" style={{ fontFamily: 'Georgia, serif' }}>
                   LEXO MË SHUMË →
                 </div>
               </Link>

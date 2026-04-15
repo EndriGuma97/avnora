@@ -30,14 +30,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-[#faf9f7]/95 backdrop-blur-md border-b border-[#b8976a]/15 py-2'
-          : 'bg-transparent py-3 md:py-5'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#1a1f2e] border-b border-[#c4a882]/15 ${
+        scrolled ? 'py-2 shadow-lg shadow-black/20' : 'py-3 md:py-5'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 flex items-center justify-between">
-        {/* Logo — smaller on mobile */}
+        {/* Logo */}
         <Link href="/" className="group flex-shrink-0">
           <Image
             src="/logo.svg"
@@ -45,9 +43,7 @@ export default function Header() {
             width={82}
             height={112}
             className={`transition-all duration-500 w-auto ${
-              scrolled
-                ? 'h-16 md:h-20'
-                : 'h-20 md:h-28'
+              scrolled ? 'h-16 md:h-20' : 'h-20 md:h-28'
             }`}
             priority
           />
@@ -59,10 +55,10 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-all duration-300 text-xs tracking-widest uppercase ${
+              className={`transition-all duration-300 text-xs tracking-widest uppercase font-semibold ${
                 pathname === link.href
-                  ? 'text-[#b8976a]'
-                  : 'text-[#c8c8c8] hover:text-[#b8976a]'
+                  ? 'text-[#c4a882]'
+                  : 'text-[#d0ccc4] hover:text-[#c4a882]'
               }`}
               style={{ fontFamily: 'Georgia, serif' }}
             >
@@ -85,13 +81,13 @@ export default function Header() {
           aria-label={menuOpen ? 'Mbylle menunë' : 'Hap menunë'}
         >
           <span
-            className={`block w-6 h-px bg-[#b8976a] transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`}
+            className={`block w-6 h-px bg-[#c4a882] transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`}
           />
           <span
-            className={`block w-6 h-px bg-[#b8976a] transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''}`}
+            className={`block w-6 h-px bg-[#c4a882] transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''}`}
           />
           <span
-            className={`block w-6 h-px bg-[#b8976a] transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}
+            className={`block w-6 h-px bg-[#c4a882] transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}
           />
         </button>
       </div>
@@ -102,14 +98,14 @@ export default function Header() {
           menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-[#faf9f7] border-t border-[#b8976a]/15 px-6 py-6 flex flex-col gap-1">
+        <div className="bg-[#1a1f2e] border-t border-[#c4a882]/20 px-6 py-6 flex flex-col gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className={`py-3 text-sm tracking-widest uppercase transition-colors border-b border-[#b8976a]/5 ${
-                pathname === link.href ? 'text-[#b8976a]' : 'text-[#c8c8c8]'
+              className={`py-3 text-sm tracking-widest uppercase transition-colors border-b border-[#c4a882]/10 font-semibold ${
+                pathname === link.href ? 'text-[#c4a882]' : 'text-[#c8c4bc]'
               }`}
               style={{ fontFamily: 'Georgia, serif' }}
             >

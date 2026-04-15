@@ -7,36 +7,48 @@ const services = [
     title: 'Kontrata Familjare',
     items: ['Parakontratë Martesore', 'Kontratë për Mbajtjen e Përjetshme', 'Kontratë për Dhuraten'],
     href: '/sherbimet#familjare',
+    accentColor: '#c4a882',
+    category: 'familjare',
   },
   {
     icon: '📋',
-    title: 'Kontrata Comerciale',
-    items: ['Kontratë Furnizimi', 'Kontratë Shitje-blerje', 'Kontratë Vepre', 'Frashizingu & Komision'],
+    title: 'Kontrata Komerciale',
+    items: ['Kontratë Furnizimi', 'Kontratë Shitje-blerje', 'Kontratë Vepre', 'Franshizingu & Komision'],
     href: '/sherbimet#comerciale',
+    accentColor: '#5b8fa8',
+    category: 'komerciale',
   },
   {
     icon: '🏛',
     title: 'Real Estate',
     items: ['Kontratë Ndërtimi', 'Kontratë Qiraje', 'Shitblerje Pasurie', 'Kontratë Huaje'],
     href: '/sherbimet#real-estate',
+    accentColor: '#7a9a6a',
+    category: 'real-estate',
   },
   {
     icon: '📝',
     title: 'Ankesa & Peticione',
     items: ['Kërkesa & Lutje', 'Vendime Administrative', 'Aneks Kontrata', 'Procesverbale'],
     href: '/sherbimet#ankesa',
+    accentColor: '#8a8aaa',
+    category: 'ankesa',
   },
   {
     icon: '🤝',
     title: 'Marrëveshje',
     items: ['Marrëveshje Bashkëpunimi', 'Marrëveshje Konfidencialiteti', 'Marrëveshje Partneriteti'],
     href: '/sherbimet#marreveshje',
+    accentColor: '#a07a6a',
+    category: 'marreveshje',
   },
   {
     icon: '🔍',
     title: 'Konsultime Ligjore',
-    items: ['Padi Comerciale', 'Kontest Pune', 'Ndarje Trashëgimie', 'Shpërblim Dëmi'],
+    items: ['Padi Komerciale', 'Kontest Pune', 'Ndarje Trashëgimie', 'Shpërblim Dëmi'],
     href: '/sherbimet#konsultime',
+    accentColor: '#4a6a8a',
+    category: 'konsultime',
   },
 ]
 
@@ -69,31 +81,34 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background */}
+      {/* HERO — dark navy background */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#1a1f2e]">
+        {/* Subtle radial glow */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'radial-gradient(ellipse at 60% 50%, rgba(184,151,106,0.08) 0%, transparent 70%), radial-gradient(ellipse at 20% 80%, rgba(184,151,106,0.05) 0%, transparent 50%)',
+            background: 'radial-gradient(ellipse at 60% 50%, rgba(196,168,130,0.07) 0%, transparent 65%), radial-gradient(ellipse at 20% 80%, rgba(196,168,130,0.04) 0%, transparent 50%)',
           }}
         />
+        {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.04]"
           style={{
-            backgroundImage: 'linear-gradient(rgba(184,151,106,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(184,151,106,0.5) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(196,168,130,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(196,168,130,0.5) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
           }}
         />
-        {/* Omega decoration */}
+        {/* Omega watermark — faint, near bottom */}
         <div
-          className="absolute hidden sm:block right-0 top-1/2 -translate-y-1/2 text-[#b8976a] select-none pointer-events-none"
+          className="absolute hidden sm:block select-none pointer-events-none"
           style={{
-            fontSize: 'clamp(200px, 35vw, 550px)',
+            fontSize: 'clamp(220px, 38vw, 600px)',
             opacity: 0.04,
             fontFamily: 'Georgia, serif',
             lineHeight: 1,
-            right: '-5%',
+            right: '-4%',
+            bottom: '-8%',
+            color: '#c4a882',
           }}
         >
           Ω
@@ -102,21 +117,21 @@ export default async function HomePage() {
         <div className="relative w-full max-w-4xl mx-auto px-5 pt-36 md:pt-44 pb-16 md:pb-24 text-center">
           {/* Pre-title */}
           <p
-            className="text-[#b8976a] mb-6 md:mb-8 text-[9px] md:text-[10px] uppercase"
-            style={{ fontFamily: 'Georgia, serif', letterSpacing: '4px' }}
+            className="text-[#c4a882] mb-6 md:mb-8"
+            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(10px, 1.5vw, 12px)', letterSpacing: '5px', textTransform: 'uppercase' }}
           >
             Shërbime Ligjore Kontraktuale
           </p>
 
-          {/* Main title */}
+          {/* Main title — bold & impactful */}
           <h1
-            className="text-[#b8976a] mb-5"
+            className="text-[#c4a882] mb-5"
             style={{
               fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(28px, 7vw, 72px)',
-              letterSpacing: 'clamp(4px, 2vw, 14px)',
-              lineHeight: 1.25,
-              fontWeight: 400,
+              fontSize: 'clamp(32px, 8vw, 80px)',
+              letterSpacing: 'clamp(4px, 2vw, 16px)',
+              lineHeight: 1.15,
+              fontWeight: 700,
             }}
           >
             AVNORA AVDIJAJ
@@ -125,10 +140,13 @@ export default async function HomePage() {
           <div className="gold-divider mb-5" />
 
           <p
-            className="text-[#5a6272] mb-6 text-[10px] md:text-[12px]"
+            className="text-[#b0a898] mb-6"
             style={{
               fontFamily: 'Georgia, serif',
-              letterSpacing: 'clamp(2px, 1vw, 4px)',
+              fontSize: 'clamp(10px, 1.5vw, 13px)',
+              letterSpacing: 'clamp(2px, 1vw, 5px)',
+              textTransform: 'uppercase',
+              fontWeight: 600,
             }}
           >
             JURISTE · DRAFTUESE KONTRATASH · VLERËSUESE LIGJORE
@@ -136,12 +154,12 @@ export default async function HomePage() {
 
           {/* Tagline */}
           <p
-            className="text-[#2d3440] mt-6 md:mt-8 mb-8 md:mb-12 max-w-xl mx-auto leading-relaxed px-2"
+            className="text-[#d0c8be] mt-6 md:mt-8 mb-8 md:mb-12 max-w-xl mx-auto leading-relaxed px-2"
             style={{
               fontFamily: 'Georgia, serif',
               fontSize: 'clamp(15px, 2.5vw, 20px)',
               fontStyle: 'italic',
-              opacity: 0.75,
+              opacity: 0.85,
             }}
           >
             &ldquo;Kontrata e sigurt është themeli i së ardhmes tuaj&rdquo;
@@ -159,7 +177,7 @@ export default async function HomePage() {
 
           {/* Values row */}
           <div
-            className="mt-12 md:mt-20 flex flex-wrap justify-center items-center gap-2 md:gap-4 text-[#b8976a]/50"
+            className="mt-12 md:mt-20 flex flex-wrap justify-center items-center gap-2 md:gap-4 text-[#c4a882]/50"
             style={{ fontFamily: 'Georgia, serif', fontSize: '9px', letterSpacing: '3px' }}
           >
             <span>KUPTUESHMËRI</span>
@@ -171,13 +189,13 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ABOUT STRIP */}
-      <section className="bg-[#f0ede8] border-y border-[#b8976a]/15 py-12 md:py-16">
+      {/* ABOUT STRIP — beige */}
+      <section className="bg-[#f0ede8] border-y border-[#c4a882]/15 py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-5 text-center">
           <p className="section-title mb-4 md:mb-6">Kush Jemi</p>
           <h2
             className="text-[#1a1f2e] mb-5"
-            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 34px)', letterSpacing: '2px', fontWeight: 400 }}
+            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(22px, 4vw, 36px)', letterSpacing: '2px', fontWeight: 700 }}
           >
             Hartim dhe Vlerësim Kontratash
           </h2>
@@ -186,7 +204,7 @@ export default async function HomePage() {
             className="text-[#5a6272] leading-relaxed max-w-2xl mx-auto"
             style={{ fontSize: '14px', lineHeight: '1.9' }}
           >
-            <strong style={{ color: '#b8976a', fontWeight: 500 }}>AV Contracts L.L.C.</strong> ofron shërbime profesionale ligjore kontraktuale
+            <strong style={{ color: '#c4a882', fontWeight: 700 }}>AV Contracts L.L.C.</strong> ofron shërbime profesionale ligjore kontraktuale
             me fokus në hartimin, rishqyrtimin dhe vlerësimin e kontratave. Me një qasje të bazuar
             në kuptueshmëri, siguri dhe saktësi, ne sigurojmë që çdo klient të jetë i mbrojtur
             ligjërisht dhe të kuptojë plotësisht çdo detyrim dhe të drejtë që rrjedh nga kontratat.
@@ -195,15 +213,15 @@ export default async function HomePage() {
           <div className="mt-6 md:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-0">
             <a
               href="tel:+38345420656"
-              className="text-[#b8976a] text-sm hover:text-[#d4aa7d] transition-colors"
+              className="text-[#c4a882] text-sm hover:text-[#d9bc9c] transition-colors"
               style={{ fontFamily: 'Georgia, serif', letterSpacing: '2px' }}
             >
               +383 45 420 656
             </a>
-            <span className="hidden sm:inline text-[#b8976a]/30 mx-4">·</span>
+            <span className="hidden sm:inline text-[#c4a882]/30 mx-4">·</span>
             <a
               href="mailto:av.contracts.ks@gmail.com"
-              className="text-[#b8976a] text-sm hover:text-[#d4aa7d] transition-colors break-all"
+              className="text-[#c4a882] text-sm hover:text-[#d9bc9c] transition-colors break-all"
               style={{ fontFamily: 'Georgia, serif', letterSpacing: '1px' }}
             >
               av.contracts.ks@gmail.com
@@ -212,13 +230,13 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* SERVICES — beige body */}
       <section className="py-14 md:py-24 max-w-6xl mx-auto px-5">
         <div className="text-center mb-10 md:mb-16">
           <p className="section-title">Çfarë Ofrojmë</p>
           <h2
             className="text-[#1a1f2e]"
-            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(22px, 4vw, 38px)', letterSpacing: '3px', fontWeight: 400 }}
+            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(22px, 4vw, 40px)', letterSpacing: '3px', fontWeight: 700 }}
           >
             SHËRBIMET TONA
           </h2>
@@ -231,16 +249,24 @@ export default async function HomePage() {
               key={service.title}
               href={service.href}
               className="card-hover block bg-[#f0ede8] p-6 md:p-8 group"
+              style={{ borderTop: `3px solid ${service.accentColor}` }}
             >
               <div
-                className="text-[#b8976a] mb-3"
-                style={{ fontSize: '26px', opacity: 0.8 }}
+                className="mb-3"
+                style={{ fontSize: '26px', opacity: 0.85, color: service.accentColor }}
               >
                 {service.icon}
               </div>
               <h3
-                className="text-[#1a1f2e] mb-3 group-hover:text-[#b8976a] transition-colors"
-                style={{ fontFamily: 'Georgia, serif', fontSize: '15px', letterSpacing: '1px' }}
+                className="text-[#1a1f2e] mb-3 group-hover:transition-colors"
+                style={{
+                  fontFamily: 'Georgia, serif',
+                  fontSize: '16px',
+                  letterSpacing: '1px',
+                  fontWeight: 700,
+                  color: service.accentColor,
+                  transition: 'color 0.3s',
+                }}
               >
                 {service.title}
               </h3>
@@ -250,12 +276,15 @@ export default async function HomePage() {
                     key={item}
                     className="text-[#5a6272] text-sm flex items-start gap-2"
                   >
-                    <span className="text-[#b8976a] mt-1 flex-shrink-0" style={{ fontSize: '7px' }}>◆</span>
+                    <span className="mt-1 flex-shrink-0" style={{ fontSize: '7px', color: service.accentColor }}>◆</span>
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 text-[#b8976a] text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
+              <div
+                className="mt-5 text-xs tracking-widest"
+                style={{ fontFamily: 'Georgia, serif', color: service.accentColor }}
+              >
                 MË SHUMË →
               </div>
             </Link>
@@ -269,14 +298,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* VALUES */}
-      <section className="bg-[#f0ede8] py-14 md:py-24 border-y border-[#b8976a]/15">
+      {/* VALUES — beige bg */}
+      <section className="bg-[#f0ede8] py-14 md:py-24 border-y border-[#c4a882]/15">
         <div className="max-w-5xl mx-auto px-5">
           <div className="text-center mb-10 md:mb-16">
             <p className="section-title">Pse Të Na Zgjidhni</p>
             <h2
               className="text-[#1a1f2e]"
-              style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 36px)', letterSpacing: '3px', fontWeight: 400 }}
+              style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 38px)', letterSpacing: '3px', fontWeight: 700 }}
             >
               VLERAT TONA
             </h2>
@@ -285,16 +314,16 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
             {values.map((v) => (
-              <div key={v.title} className="text-center p-6 md:p-8 border border-[#b8976a]/20 bg-white hover:border-[#b8976a]/50 transition-colors">
+              <div key={v.title} className="text-center p-6 md:p-8 border border-[#c4a882]/20 bg-white hover:border-[#c4a882]/50 transition-colors">
                 <div
-                  className="w-14 h-14 md:w-16 md:h-16 border border-[#b8976a]/40 flex items-center justify-center mx-auto mb-5"
-                  style={{ fontFamily: 'Georgia, serif', fontSize: '22px', color: '#b8976a' }}
+                  className="w-14 h-14 md:w-16 md:h-16 border border-[#c4a882]/40 flex items-center justify-center mx-auto mb-5"
+                  style={{ fontFamily: 'Georgia, serif', fontSize: '22px', color: '#c4a882', fontWeight: 700 }}
                 >
                   {v.symbol}
                 </div>
                 <h3
-                  className="text-[#b8976a] mb-3"
-                  style={{ fontFamily: 'Georgia, serif', fontSize: '13px', letterSpacing: '3px', textTransform: 'uppercase' }}
+                  className="text-[#c4a882] mb-3"
+                  style={{ fontFamily: 'Georgia, serif', fontSize: '14px', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 700 }}
                 >
                   {v.title}
                 </h3>
@@ -311,8 +340,8 @@ export default async function HomePage() {
       <section className="py-14 md:py-24 max-w-5xl mx-auto px-5">
         <div className="text-center mb-10 md:mb-14">
           <div
-            className="text-[#b8976a] mb-2"
-            style={{ fontFamily: 'Georgia, serif', fontSize: '36px', opacity: 0.7 }}
+            className="text-[#c4a882] mb-2"
+            style={{ fontFamily: 'Georgia, serif', fontSize: '36px', opacity: 0.6 }}
           >
             Ω
           </div>
@@ -320,15 +349,15 @@ export default async function HomePage() {
           <div className="gold-divider my-4" />
           <h2
             className="text-[#1a1f2e] max-w-3xl mx-auto"
-            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(16px, 3vw, 26px)', letterSpacing: '1px', fontWeight: 400, lineHeight: 1.4 }}
+            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(18px, 3vw, 28px)', letterSpacing: '1px', fontWeight: 700, lineHeight: 1.4 }}
           >
             AV CONTRACTS nuk ju ofron vetëm shërbime, ne ju ofrojmë{' '}
-            <span className="text-[#b8976a]">ZGJIDHJE</span>
+            <span className="text-[#c4a882]">ZGJIDHJE</span>
           </h2>
         </div>
 
         {/* Main content box */}
-        <div className="border border-[#b8976a]/25 bg-[#f0ede8] p-7 md:p-10 mb-10">
+        <div className="border border-[#c4a882]/25 bg-[#f0ede8] p-7 md:p-10 mb-10">
           <p
             className="text-[#5a6272] leading-relaxed"
             style={{ fontSize: '15px', lineHeight: '1.9' }}
@@ -338,7 +367,7 @@ export default async function HomePage() {
             <strong style={{ color: '#1a1f2e' }}>idetë, krijimet dhe inovacionet tuaja</strong>.{' '}
             <strong style={{ color: '#1a1f2e' }}>AV CONTRACTS</strong> shërben si mburoja juaj juridike,
             duke hartuar dhe siguruar kontrata në përputhje me ligjin në fuqi dhe që prona juaj
-            intelektuale të mbetet e juaja – sot dhe në të ardhmen.
+            intelektuale të mbetet e juaja — sot dhe në të ardhmen.
           </p>
           <p
             className="text-[#1a1f2e] text-center mt-7 font-medium"
@@ -350,12 +379,12 @@ export default async function HomePage() {
 
         {/* TEKNOLOGJIA section heading */}
         <h3
-          className="text-center text-[#b8976a] mb-8 md:mb-10"
+          className="text-center text-[#c4a882] mb-8 md:mb-10"
           style={{
             fontFamily: 'Georgia, serif',
             fontSize: 'clamp(16px, 2.5vw, 22px)',
             letterSpacing: 'clamp(2px, 1vw, 6px)',
-            fontWeight: 400,
+            fontWeight: 700,
           }}
         >
           TEKNOLOGJIA NDRYSHON, SIGURIA MBETET
@@ -363,25 +392,25 @@ export default async function HomePage() {
 
         {/* Two columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
-          <div className="border border-[#b8976a]/20 bg-white p-6 md:p-8">
+          <div className="border border-[#c4a882]/20 bg-white p-6 md:p-8">
             <h4
               className="text-[#1a1f2e] mb-4"
-              style={{ fontFamily: 'Georgia, serif', fontSize: '15px', letterSpacing: '1px' }}
+              style={{ fontFamily: 'Georgia, serif', fontSize: '15px', letterSpacing: '1px', fontWeight: 700 }}
             >
-              1. <strong>Mbrojtja e Pronës Njerëzore:</strong>
+              1. Mbrojtja e Pronës Njerëzore
             </h4>
             <p className="text-[#5a6272] text-sm leading-relaxed" style={{ lineHeight: '1.85' }}>
               Ne besojmë se krijimi i njeriut është unik. Në një kohë kur përmbajtja e
-              gjeneruar nga makineritë AI po vërshon tregun, ne draftojmë kontrata që
-              vërtetojnë dhe mbrojnë &ldquo;autorsinë njerëzore&rdquo; si një aset premium.
+              gjeneruar nga makineritë AI po vërshon tregun, ne hartojmë kontrata që
+              vërtetojnë dhe mbrojnë autorësinë njerëzore si një aset premium.
             </p>
           </div>
-          <div className="border border-[#b8976a]/20 bg-white p-6 md:p-8">
+          <div className="border border-[#c4a882]/20 bg-white p-6 md:p-8">
             <h4
               className="text-[#1a1f2e] mb-4"
-              style={{ fontFamily: 'Georgia, serif', fontSize: '15px', letterSpacing: '1px' }}
+              style={{ fontFamily: 'Georgia, serif', fontSize: '15px', letterSpacing: '1px', fontWeight: 700 }}
             >
-              2. <strong>Saktësi Juridike në Detaj:</strong>
+              2. Saktësi Juridike në Detaj
             </h4>
             <p className="text-[#5a6272] text-sm leading-relaxed" style={{ lineHeight: '1.85' }}>
               Çdo kontratë e jona parashikon efektet afatgjata. Ne nuk shkruajmë vetëm për
@@ -392,38 +421,38 @@ export default async function HomePage() {
         </div>
 
         {/* BESUESHMËRIA SI STANDARD */}
-        <div className="border-t border-[#b8976a]/20 pt-10">
+        <div className="border-t border-[#c4a882]/20 pt-10">
           <h3
             className="text-center text-[#1a1f2e] mb-7"
             style={{
               fontFamily: 'Georgia, serif',
               fontSize: 'clamp(15px, 2.5vw, 20px)',
               letterSpacing: 'clamp(2px, 1vw, 6px)',
-              fontWeight: 400,
+              fontWeight: 700,
             }}
           >
             BESUESHMËRIA SI STANDARD
           </h3>
-          <div className="border border-[#b8976a]/20 bg-[#f0ede8] p-6 md:p-8">
+          <div className="border border-[#c4a882]/20 bg-[#f0ede8] p-6 md:p-8">
             <p
               className="text-[#5a6272] leading-relaxed"
               style={{ fontSize: '15px', lineHeight: '1.9' }}
             >
-              Në <strong style={{ color: '#1a1f2e' }}>AV CONTRACTS</strong>, ne nuk draftojmë vetëm dokumente;
+              Në <strong style={{ color: '#1a1f2e' }}>AV CONTRACTS</strong>, ne nuk hartojmë vetëm dokumente;
               ne krijojmë <strong style={{ color: '#1a1f2e' }}>arkitekturë ligjore</strong>.
-              Besueshmëria jonë buron nga saktësia ligjore në krahasim me atë digjitale
-              dhe pasioni për të mbrojtur atë që ju keni ndërtuar me mund.
+              Besueshmëria jonë buron nga saktësia ligjore dhe pasioni për të mbrojtur
+              atë që ju keni ndërtuar me mund.
             </p>
           </div>
           <div className="text-center mt-7">
             <div
-              className="text-[#b8976a] mb-4"
-              style={{ fontFamily: 'Georgia, serif', fontSize: '32px', opacity: 0.5 }}
+              className="text-[#c4a882] mb-4"
+              style={{ fontFamily: 'Georgia, serif', fontSize: '32px', opacity: 0.4 }}
             >
               Ω
             </div>
             <p
-              className="text-[#b8976a] text-[10px] md:text-xs tracking-widest"
+              className="text-[#c4a882] text-[10px] md:text-xs tracking-widest"
               style={{ fontFamily: 'Georgia, serif', letterSpacing: '3px' }}
             >
               BESOJA HARTIMIN E KONTRATAVE ©AV CONTRACTS™ DHE, THUAJ SIGURISË MIRËSERDHE.
@@ -434,13 +463,13 @@ export default async function HomePage() {
 
       {/* BLOG PREVIEW */}
       {posts.length > 0 && (
-        <section className="bg-[#f0ede8] border-t border-[#b8976a]/15 py-14 md:py-24 max-w-full">
+        <section className="bg-[#f0ede8] border-t border-[#c4a882]/15 py-14 md:py-24 max-w-full">
           <div className="max-w-6xl mx-auto px-5">
             <div className="text-center mb-10 md:mb-16">
               <p className="section-title">Njohuri Ligjore</p>
               <h2
                 className="text-[#1a1f2e]"
-                style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 36px)', letterSpacing: '3px', fontWeight: 400 }}
+                style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 38px)', letterSpacing: '3px', fontWeight: 700 }}
               >
                 ARTIKUJ TË FUNDIT
               </h2>
@@ -456,15 +485,15 @@ export default async function HomePage() {
                 >
                   {post.category && (
                     <span
-                      className="text-[#b8976a] text-xs tracking-widest uppercase"
+                      className="text-[#c4a882] text-xs tracking-widest uppercase font-semibold"
                       style={{ fontFamily: 'Georgia, serif' }}
                     >
                       {post.category}
                     </span>
                   )}
                   <h3
-                    className="text-[#1a1f2e] mt-3 mb-3 group-hover:text-[#b8976a] transition-colors"
-                    style={{ fontFamily: 'Georgia, serif', fontSize: '16px', lineHeight: 1.5 }}
+                    className="text-[#1a1f2e] mt-3 mb-3 group-hover:text-[#c4a882] transition-colors"
+                    style={{ fontFamily: 'Georgia, serif', fontSize: '16px', lineHeight: 1.5, fontWeight: 700 }}
                   >
                     {post.title}
                   </h3>
@@ -473,7 +502,7 @@ export default async function HomePage() {
                       {post.excerpt}
                     </p>
                   )}
-                  <div className="mt-5 text-[#b8976a] text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
+                  <div className="mt-5 text-[#c4a882] text-xs tracking-widest" style={{ fontFamily: 'Georgia, serif' }}>
                     LEXO →
                   </div>
                 </Link>
@@ -490,21 +519,21 @@ export default async function HomePage() {
       )}
 
       {/* CTA BANNER */}
-      <section className="py-14 md:py-20 relative overflow-hidden border-y border-[#b8976a]/15">
+      <section className="py-14 md:py-20 relative overflow-hidden border-y border-[#c4a882]/15">
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, rgba(184,151,106,0.06) 0%, transparent 60%)' }}
+          style={{ background: 'linear-gradient(135deg, rgba(196,168,130,0.06) 0%, transparent 60%)' }}
         />
         <div className="relative max-w-2xl mx-auto px-5 text-center">
           <div
-            className="text-[#b8976a] mb-3"
+            className="text-[#c4a882] mb-3"
             style={{ fontFamily: 'Georgia, serif', fontSize: '40px', opacity: 0.2 }}
           >
             Ω
           </div>
           <h2
             className="text-[#1a1f2e] mb-4"
-            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 34px)', letterSpacing: '3px', fontWeight: 400 }}
+            style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(20px, 4vw, 36px)', letterSpacing: '3px', fontWeight: 700 }}
           >
             Keni Nevojë për Ndihmë Ligjore?
           </h2>

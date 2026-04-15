@@ -9,7 +9,7 @@ export default function KontaktPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 md:pt-44 pb-12 md:pb-20 relative overflow-hidden border-b border-[#b8976a]/10">
+      <section className="pt-32 md:pt-44 pb-12 md:pb-20 relative overflow-hidden border-b border-[#c4a882]/10">
         <div
           className="absolute inset-0"
           style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(184,151,106,0.06) 0%, transparent 70%)' }}
@@ -49,21 +49,21 @@ export default function KontaktPage() {
               {/* Phone */}
               <div className="flex items-center gap-4 md:items-start md:gap-5">
                 <div
-                  className="w-11 h-11 md:w-12 md:h-12 border border-[#b8976a]/30 flex items-center justify-center flex-shrink-0"
-                  style={{ color: '#b8976a', fontSize: '17px' }}
+                  className="w-11 h-11 md:w-12 md:h-12 border border-[#c4a882]/30 flex items-center justify-center flex-shrink-0"
+                  style={{ color: '#c4a882', fontSize: '17px' }}
                 >
                   ☎
                 </div>
                 <div>
                   <p
-                    className="text-[#b8976a] mb-1"
+                    className="text-[#c4a882] mb-1"
                     style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
                   >
                     Telefon
                   </p>
                   <a
                     href="tel:+38345420656"
-                    className="text-[#1a1f2e] text-base md:text-lg hover:text-[#b8976a] transition-colors"
+                    className="text-[#1a1f2e] text-base md:text-lg hover:text-[#c4a882] transition-colors"
                     style={{ fontFamily: 'Georgia, serif' }}
                   >
                     +383 45 420 656
@@ -74,21 +74,21 @@ export default function KontaktPage() {
               {/* Email */}
               <div className="flex items-center gap-4 md:items-start md:gap-5">
                 <div
-                  className="w-11 h-11 md:w-12 md:h-12 border border-[#b8976a]/30 flex items-center justify-center flex-shrink-0"
-                  style={{ color: '#b8976a', fontSize: '17px' }}
+                  className="w-11 h-11 md:w-12 md:h-12 border border-[#c4a882]/30 flex items-center justify-center flex-shrink-0"
+                  style={{ color: '#c4a882', fontSize: '17px' }}
                 >
                   ✉
                 </div>
                 <div className="min-w-0">
                   <p
-                    className="text-[#b8976a] mb-1"
+                    className="text-[#c4a882] mb-1"
                     style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
                   >
                     Email
                   </p>
                   <a
                     href="mailto:av.contracts.ks@gmail.com"
-                    className="text-[#1a1f2e] text-sm md:text-base hover:text-[#b8976a] transition-colors break-all"
+                    className="text-[#1a1f2e] text-sm md:text-base hover:text-[#c4a882] transition-colors break-all"
                     style={{ fontFamily: 'Georgia, serif' }}
                   >
                     av.contracts.ks@gmail.com
@@ -99,14 +99,14 @@ export default function KontaktPage() {
               {/* Hours */}
               <div className="flex items-center gap-4 md:items-start md:gap-5">
                 <div
-                  className="w-11 h-11 md:w-12 md:h-12 border border-[#b8976a]/30 flex items-center justify-center flex-shrink-0"
-                  style={{ color: '#b8976a', fontSize: '17px' }}
+                  className="w-11 h-11 md:w-12 md:h-12 border border-[#c4a882]/30 flex items-center justify-center flex-shrink-0"
+                  style={{ color: '#c4a882', fontSize: '17px' }}
                 >
                   ◷
                 </div>
                 <div>
                   <p
-                    className="text-[#b8976a] mb-1"
+                    className="text-[#c4a882] mb-1"
                     style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
                   >
                     Orari i Punës
@@ -114,7 +114,7 @@ export default function KontaktPage() {
                   <p className="text-[#1a1f2e] text-sm md:text-base" style={{ fontFamily: 'Georgia, serif' }}>
                     E Hënë – E Premte
                   </p>
-                  <p className="text-[#b8976a] mt-0.5 text-lg md:text-xl" style={{ fontFamily: 'Georgia, serif', letterSpacing: '2px' }}>
+                  <p className="text-[#c4a882] mt-0.5 text-lg md:text-xl" style={{ fontFamily: 'Georgia, serif', letterSpacing: '2px' }}>
                     08:00 – 16:00
                   </p>
                 </div>
@@ -122,9 +122,9 @@ export default function KontaktPage() {
             </div>
 
             {/* Tagline box */}
-            <div className="mt-8 md:mt-12 p-5 md:p-6 border border-[#b8976a]/20 bg-[#f0ede8]">
+            <div className="mt-8 md:mt-12 p-5 md:p-6 border border-[#c4a882]/20 bg-[#f0ede8]">
               <p
-                className="text-[#b8976a] mb-2"
+                className="text-[#c4a882] mb-2"
                 style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
               >
                 Moto jonë
@@ -136,7 +136,7 @@ export default function KontaktPage() {
                 &ldquo;Kontrata e sigurt është themeli i së ardhmes tuaj&rdquo;
               </p>
               <div
-                className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[#b8976a]/50"
+                className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-[#c4a882]/50"
                 style={{ fontFamily: 'Georgia, serif', fontSize: '9px', letterSpacing: '2px' }}
               >
                 <span>KUPTUESHMËRI</span>
@@ -173,7 +173,7 @@ function ContactForm() {
 
       <div>
         <label
-          className="block text-[#b8976a] mb-2"
+          className="block text-[#c4a882] mb-2"
           style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
         >
           Emri i Plotë *
@@ -182,14 +182,14 @@ function ContactForm() {
           type="text"
           name="name"
           required
-          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#c4a882]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#c4a882]/70 transition-colors text-sm md:text-base"
           placeholder="Emri dhe Mbiemri"
         />
       </div>
 
       <div>
         <label
-          className="block text-[#b8976a] mb-2"
+          className="block text-[#c4a882] mb-2"
           style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
         >
           Email *
@@ -198,14 +198,14 @@ function ContactForm() {
           type="email"
           name="email"
           required
-          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#c4a882]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#c4a882]/70 transition-colors text-sm md:text-base"
           placeholder="emailijuaj@email.com"
         />
       </div>
 
       <div>
         <label
-          className="block text-[#b8976a] mb-2"
+          className="block text-[#c4a882] mb-2"
           style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
         >
           Telefon
@@ -213,21 +213,21 @@ function ContactForm() {
         <input
           type="tel"
           name="telefon"
-          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#c4a882]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#c4a882]/70 transition-colors text-sm md:text-base"
           placeholder="+383 XX XXX XXX"
         />
       </div>
 
       <div>
         <label
-          className="block text-[#b8976a] mb-2"
+          className="block text-[#c4a882] mb-2"
           style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
         >
           Shërbimi i Kërkuar
         </label>
         <select
           name="sherbimi"
-          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors text-sm md:text-base"
+          className="w-full bg-white border border-[#c4a882]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#c4a882]/70 transition-colors text-sm md:text-base"
         >
           <option value="">— Zgjidhni shërbimin —</option>
           <option value="Kontrata Familjare">Kontrata Familjare</option>
@@ -242,7 +242,7 @@ function ContactForm() {
 
       <div>
         <label
-          className="block text-[#b8976a] mb-2"
+          className="block text-[#c4a882] mb-2"
           style={{ fontFamily: 'Georgia, serif', fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase' }}
         >
           Mesazhi *
@@ -251,7 +251,7 @@ function ContactForm() {
           name="mesazhi"
           required
           rows={5}
-          className="w-full bg-white border border-[#b8976a]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#b8976a]/70 transition-colors resize-none text-sm md:text-base"
+          className="w-full bg-white border border-[#c4a882]/25 text-[#1a1f2e] px-4 py-3 focus:outline-none focus:border-[#c4a882]/70 transition-colors resize-none text-sm md:text-base"
           placeholder="Përshkruani shkurtimisht nevojën tuaj ligjore..."
         />
       </div>
