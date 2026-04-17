@@ -6,6 +6,7 @@ import { schemaTypes } from './sanity/schemaTypes'
 export default defineConfig({
   name: 'av-contracts',
   title: 'AV Contracts — Studio',
+  basePath: '/studio',
 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'wfh4wuaa',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
