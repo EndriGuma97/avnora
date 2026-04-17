@@ -168,7 +168,7 @@ function ContactForm() {
     >
       <input type="hidden" name="_subject" value="Mesazh i ri nga faqja AV Contracts" />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://avcontracts.com/kontakt?sent=true" />
+      <input type="hidden" name="_next" value="https://www.avcontractsks.com/kontakt?sent=true" />
       <input type="text" name="_honey" style={{ display: 'none' }} />
 
       <div>
