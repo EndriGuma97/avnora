@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'av-contracts',
   title: 'AV Contracts — Studio',
 
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'placeholder',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'wfh4wuaa',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
 
   plugins: [structureTool(), visionTool()],
