@@ -14,46 +14,86 @@ const serviceCategories = [
     icon: '⚖',
     accentColor: '#c4a882',
     description:
-      'Kontratat familjare hartohen me kujdes të veçantë për të mbrojtur të drejtat dhe interesat e të gjithë palëve të përfshira. Çdo kontratë është e personalizuar sipas situatës tuaj specifike.',
+      'Kontratat familjare hartohen me kujdes të veçantë për të mbrojtur të drejtat dhe interesat e të gjithë paleve të përfshira. Çdo Kontratë është e personalizuar sipas situatës tuaj specifike.',
     services: [
       {
-        name: 'Parakontratë Martesore',
-        desc: 'Hartim i marrëveshjes parakonjugale për rregullimin e pasurisë dhe detyrimeve mes bashkëshortëve.',
+        name: 'Kontratë Paramartesore',
+        desc: 'Besimi bazohet në dashuri dhe sigurinë që ofron për të ardhmen. JU e doni njëri tjetrin — keni besim të njeri tjetri dhe nuk doni të krijoni mosmarrëveshje të panevojshme rreth sigurisë së përbashkët materiale që mund ta vinin njëri tjetrin në rrethana të palakmueshme. ZGJIDHJA: Hartimi i një kontratë paramartesore e cila në mënyrë specifike do të përshkruante administrimin e pasurisë suaj të përbashket martesore.',
       },
       {
         name: 'Kontratë për Mbajtjen e Përjetshme',
-        desc: 'Kontratë ligjore për transferim pasurie me kushtin e mbajtjes së personit gjatë gjithë jetës (pa noterizim).',
+        desc: 'Nuk jeni të sigurt se kush do të kujdeset për ju deri në fund të jetës suaj? ZGJIDHJA: Hartimi i një kontrate për mbatje të përjetshme nga profesionist që jo vetmëm e njohin ligjin për të drejtat sendore a trashëgimore por edhe ligjin e së drejtes së detyrimeve. Dhe për këtë ju garantojmë një kontratë plotësisht të sakt për qetësinë e të ardhmes suaj.',
       },
       {
-        name: 'Kontratë për Dhuraten',
-        desc: 'Dokumentim ligjor i dhurimit të pasurisë së luajtshme dhe të paluajtshme mes personave.',
+        name: 'Kontratë Dhurate',
+        desc: 'Jeni bujar me dhurata por nuk doni që bujaria juaj të keqpërdoret? ZGJIDHJA: Hartoni një Kontratë specifike për dhuraten me të drejta e detyrime që nuk ia ulin vleren e dinjitetit, bujarisë dhe mirënjohjes.',
       },
     ],
   },
   {
     id: 'comerciale',
-    title: 'Kontrata Komerciale',
+    title: 'Kontrata Comerciale',
     icon: '📋',
     accentColor: '#5b8fa8',
     description:
-      'Fushat tregtare kërkojnë kontrata të sakta dhe gjithëpërfshirëse. Ofrojmë hartimin e çdo lloji kontrate komerciale sipas legjislacionit në fuqi.',
+      'Fushat tregtare kërkojnë Kontrata të sakta dhe të detajuara kundrejt vlerës së fitimit dhe taksa-tatimeve e tvsh-së në fuqi. Kontratat e hartuara nga AV CONTRACTS draftohen sipas vlerës së tregut dhe synimeve të klinetit tonë për siguri finaciare dhe sukses afatgjatë nga 1-5 vite e më shumë.',
     services: [
-      { name: 'Kontratë Furnizimi', desc: 'Marrëveshje për furnizimin e mallrave dhe shërbimeve mes bizneseve.' },
-      { name: 'Kontratë Shitje-blerje', desc: 'Transferim ligjor i pronësisë së mallrave me të gjitha kushtet e pagesës.' },
-      { name: 'Kontratë Transportimi', desc: 'Kontratë për transportin e personave dhe sendeve, me përgjegjësi të qarta.' },
-      { name: 'Kontratë Udhëtimi', desc: 'Marrëveshje mes agjencive të udhëtimit dhe klientëve.' },
-      { name: 'Kontratë Vepre', desc: 'Kontratë për kryerjen e punëve specifike me afate dhe kushte të caktuara.' },
-      { name: 'Kontratë Franshizingu', desc: 'Marrëveshje franshize midis franshizuesit dhe franshizuarit.' },
-      { name: 'Kontratë Hotelerie-Alotmanit', desc: 'Kontratë për shërbime hotelerie dhe rezervime kolektive.' },
-      { name: 'Kontratë Ndërmjetësimi', desc: 'Marrëveshje për ndërmjetësimin në transaksione tregtare.' },
-      { name: 'Kontratë Përfaqësimi Tregtar', desc: 'Autorizim ligjor për përfaqësim në transaksione tregtare.' },
-      { name: 'Kontratë Komisionit', desc: 'Marrëveshje për shitje mallrash me komision nga palë të treta.' },
-      { name: 'Kontratë Urdhëri', desc: 'Kontratë për ekzekutimin e urdhërave tregtare specifike.' },
-      { name: 'Kontratë Depozite', desc: 'Marrëveshje për ruajtjen e mallrave ose vlerave monetare.' },
-      { name: 'Kontratë Kontrollit të Mallrave', desc: 'Kontratë për inspektimin dhe kontrollin e cilësisë së mallrave.' },
-      { name: 'Kontratë Shpeditimi-Dërgimit', desc: 'Marrëveshje logjistike për transportin ndërkombëtar të mallrave.' },
-      { name: 'Shitja me Specifikim', desc: 'Kontratë shitje me karakteristika teknike të detajuara.' },
-      { name: 'Shitja me të Drejtën e Parablerjes', desc: 'Kontratë shitje me rezervimin e të drejtës prioritare.' },
+      {
+        name: 'Know How Kontrata',
+        desc: 'Shkëmbim njohurishë dhe trajnimesh me ndikim afatgjatë në punen tuaj ndërmarrese me Kompani; Trajner dhe Mentor të çertifikuar për avancimin e biznesit tuaj. Draftoni njohurinë specifike që dëshironi të përfitoni.',
+      },
+      {
+        name: 'Kontratë Furnizimi',
+        desc: 'Kërkesa juaj për "Tërheqjen e vërejtjes në ambalazh" është e drejtë e juaja themelore për tu mbrojtur nga ankesat e konsumatorve për të shmangur dëmet e paparishikuara dhe masa tjera përkatëse. Na lini neve draftimin e siguroni konsumatoret dhe të drejatat tuaja ligjore për të ardhmen.',
+      },
+      {
+        name: 'Kontratë Përfaqësimi Tregtar',
+        desc: 'Jeni CEO i Kompanisë suaj dhe ka ardhur koha të caktoni një përfaqësues tregtar që në emer dhe për llogari tuajen të ndërmjetësojë, si dhe me të marrë autorizimin të lidhë kontrata me persona të tretë sipas një kompensimi të caktuar. Besoni në ne dhe draftoni në mënyrë ligjore autorizimet tuaja.',
+      },
+      {
+        name: 'Kontratë Këmbimi',
+        desc: 'Nga kontrata e Këmbimit për secilin bashkëkontraktues krijohen të drejta dhe detyrime si ato që krijohen te kontrata e shitjes për shitësin dhe blerësin.',
+      },
+      {
+        name: 'Kontratë Vepre',
+        desc: 'Kontratë për kryerjen e puneve specifike me afate dhe kushte të caktuara. Çfarë aspekte të të drejtave dhe detyrimeve përfshinë Kontrata për vepren? Me Kuptueshmëri të qartë ju konkretizojmë shërbimet që hynë në Kontraten e Vepres.',
+      },
+      {
+        name: 'Kontratë Urdhëri',
+        desc: 'Objekti i kësaj kontrate mund të jetë kryerja e punëve juridike, punëve fizike dhe shërbimet intelektuale nga ana e dekretmarrësit, me shpërblim ose pa shpërblim.',
+      },
+      {
+        name: 'Kontratë Frashizingu',
+        desc: 'Frashizingu prodhues; frashizinu afarist; frashizingu për dhënjen e shërbimeve në rastet kur Frashëzingdhënësi i jep prodhimin e caktuar të mallit.',
+      },
+      {
+        name: 'Kontratë Magazine',
+        desc: 'Hartoni me ne Kontratën për Magazinë dhe siguroni saktësinë e të drejtave dhe detyrimeve mbi mallin që i takon palës tjetër dhe përmbushjes sipas kushteve kontraktuale për strehimin dhe ruajtjen e mallit në mes të subjekteve ekonomike.',
+      },
+      {
+        name: 'Kontratë Udhëtimi',
+        desc: 'Marrëveshje mes agjencive të udhëtimit dhe klienteve.',
+      },
+      {
+        name: 'Kontratë Alotmani\\Hotelerie',
+        desc: 'Kontratë Udhëtimi dhe rezervim hotelerije kolektive.',
+      },
+      {
+        name: 'Kontratë Transporti',
+        desc: 'Kryerja me shpërblim e transportit të mallit në vendin dhe kohen e caktuar, dërguesit ose përsonit të caktuar (marrësit). Apo një palë të tretë, konform rregullave Rregullat Incoterms dhe ICC. Ne sigurohemi që Kontrata juaj të jetë e përditësuar dhe shqyrtuar me nacionalizimin, shpronësimin dhe kompensimin ligjor internacional.',
+      },
+      {
+        name: 'Kontrata për Lizing',
+        desc: 'Dëshironi që pas shfrytëzimit të afatit kontraktues objekti i kontratës të kalojë në pronësinë tuaj apo të vazhdoni marrëdhënjen Lizing? Na kontaktoni dhe ju shpjegojmë nëse ia vlenë një rast i tillë.',
+      },
+      {
+        name: 'Kontratë Ndërmjetësimi-Komitent',
+        desc: 'Një kontratë e tillë e qarkullimit të mallrave, në bazë të së cilës ndërmjetësuesi detyrohet që palën tjetër — komitentin, ta sjellë në kontakt me ndonjë person tjetër të tretë, me qëllim që komitenti të lidhë me të ndonjë kontratë të qarkullimit të mallrave dhe ruajtjen e fshehtësisë afariste.',
+      },
+      {
+        name: 'Kontratë Komisioni · Komisioner',
+        desc: 'Në qarkullimin e mallrave komisionet paraqiten si komisione të shitjes, të blerjes dhe të transportit me komision. Komisionari detyrohet që të lidhë kontratë në emër të vet dhe për llogari të tjetrit (komitentit), kurse komitenti në shpengim të paguajë provizionin e kontraktuar. Shkruaj saktë të drejtat e paleve draftoje me AV Contracts delegimin e të drejtave dhe detyrimeve komisonare.',
+      },
     ],
   },
   {
@@ -64,13 +104,34 @@ const serviceCategories = [
     description:
       'Transaksionet e pasurive të paluajtshme kërkojnë kujdes ligjor të veçantë. Sigurohemi që çdo kontratë të jetë e vlefshme dhe t\'ju mbrojë plotësisht.',
     services: [
-      { name: 'Kontratë për Ndërtimin', desc: 'Marrëveshje gjithëpërfshirëse mes investitorit dhe kontraktorit të ndërtimit.' },
-      { name: 'Kontratë Huaje', desc: 'Kontratë financiare për dhënien ose marrjen e huasë.' },
-      { name: 'Kontratë Magazine', desc: 'Marrëveshje për ruajtjen dhe menaxhimin e mallrave në magazinë.' },
-      { name: 'Kontratë Qiraje', desc: 'Kontratë e qirasë për prona rezidenciale dhe komerciale.' },
-      { name: 'Kontratë për Këmbimin', desc: 'Marrëveshje për shkëmbimin e pasurive ndërmjet palëve.' },
-      { name: 'Kontratë Shitblerje Pasurie', desc: 'Dokumentacion i plotë ligjor për transferimin e pronësisë së pasurisë së paluajtshme.' },
-      { name: 'Kontratë Huë Përdoreje', desc: 'Marrëveshje për përdorimin pa pagesë të një sendi ose pasurie.' },
+      {
+        name: 'Kontratë Qiraje',
+        desc: 'Cili është objekti i Kontratës së qirasë për prona rezidenciale dhe komerciale dhe a mbështetet në bazë të sakt ligjore sipas afatit dhe kushteve të të drejtave dhe detyrimeve të paleve kontraktuese? Çfarë alternativash keni në rast të mos përmbushjes së detyrimeve? AV CONTRACTS mendon në hollesi për ndryshimet e rrethanave dhe përmbushjen e tyre alternative.',
+      },
+      {
+        name: 'Kontratë Shitblerje Paluajshmërie',
+        desc: 'Kalimi i pronësinë së sendit përkatësisht ndonjë të drejte në emer të një titullari tjeter kërkon më shumë se sa pagimi i një çmimi të caktuar në Kontratë. Ekzistojnë: shitja me provë; shitja sipas modelit apo mostrës; shitja me specifikim; shitja me kushte; shitja me pagim të çmimit me këste; shitja me anë të akreditivit; urdhri i shitjes. Harto Kontraten tënde me dëmshpërblime të paracaktuara — Kamatë Vonesa dhe një plan B.',
+      },
+      {
+        name: 'Kontratë Ndërtimi Sipërmarrës-Porositës',
+        desc: 'Përcakton specifikisht sipas Ligjit të ndërtimit dhe planit të hartes kadastrale të detajuar — materialin e ndërtimit; kalimin e tjetërsimin e titullarit të pronësisë dokumentacionin e kompletuar dhe përcaktimin e organeve kompetenete për realizimin në kohë të regjistrimit në librat publikë kadastral.',
+      },
+      {
+        name: 'Kontratë Huaje',
+        desc: 'Kontratë huaje e një masë të caktuar sendesh të zëvendësueshme, dhe të pazëvendësueshme sipas të drejtave dhe detyrimeve të paleve kontraktuale.',
+      },
+      {
+        name: 'Kontratë Huapërdoreje',
+        desc: 'Kontratë huapërdoreje mbi një objekt, send apo të drejte në përdorim sipas kushteve kontraktuale.',
+      },
+      {
+        name: 'Kontratë Depozite',
+        desc: 'Ruajtja ose depozitimi për një kohë të caktuar të një sendi, sjellë edhe të drejat e detyrime të nevojshme. Hartoni depoztiten tuaj me shkrim dhe shmangni të papriturat.',
+      },
+      {
+        name: 'Kontratë Magazine',
+        desc: 'Hartoni me ne Kontratën për Magazinën dhe siguroni saktësinë e të drejtave dhe detyrimeve mbi mallin që i takon palës tjetër dhe përmbushjes sipas kushteve kontraktuale për strehimin dhe ruajtjen e mallit në mes të subjekteve ekonomike.',
+      },
     ],
   },
   {
@@ -79,13 +140,12 @@ const serviceCategories = [
     icon: '📝',
     accentColor: '#8a8aaa',
     description:
-      'Hartojmë dokumentacionin e nevojshëm administrativ dhe ligjor për mbrojtjen e të drejtave tuaja para institucioneve.',
+      'Hartojmë dokumentacionin e nevojshëm administrativë dhe ligjor për mbrojtjen e të drejtave tuaja para institucione publike dhe private.',
     services: [
-      { name: 'Kërkesa Administrative', desc: 'Hartim i kërkesave formale drejtuar institucioneve publike dhe private.' },
-      { name: 'Lutje & Ankesa', desc: 'Dokumentim i ankesave ligjore dhe peticioneve zyrtare.' },
+      { name: 'Ankesa & Lutje', desc: 'Hartim i ankesave dhe lutjeve drejtuar institucioneve publike dhe private.' },
       { name: 'Vendime Administrative', desc: 'Analizë dhe kontestim i vendimeve administrative.' },
-      { name: 'Aneks Kontrata', desc: 'Shtesa dhe modifikime ligjore të kontratave ekzistuese.' },
-      { name: 'Procesverbale', desc: 'Hartim i procesverbalave të mbledhjeve dhe vendimeve institucionale.' },
+      { name: 'Peticione', desc: 'Hartim i peticioneve zyrtare për mbrojtjen e të drejtave tuaja.' },
+      { name: 'Aneks Kontrata & Procesverbale', desc: 'Shtesa dhe modifikime ligjore të kontratave ekzistuese si dhe hartim procesverbalave.' },
     ],
   },
   {
@@ -96,10 +156,18 @@ const serviceCategories = [
     description:
       'Marrëveshjet e hartuara në mënyrën e duhur shmangen mosmarrëveshjet dhe garantojnë ekzekutimin e detyrimeve reciproke.',
     services: [
-      { name: 'Marrëveshje Bashkëpunimi', desc: 'Kontratë mes partnerëve për realizimin e projekteve të përbashkëta.' },
-      { name: 'Marrëveshje Konfidencialiteti (NDA)', desc: 'Mbrojtja e informatave konfidenciale dhe sekreteve tregtare.' },
-      { name: 'Marrëveshje Partneriteti', desc: 'Strukturimi ligjor i partneriteteve biznesore.' },
-      { name: 'Marrëveshje Shlyerjeje', desc: 'Zgjidhje jashtëgjyqësore e mosmarrëveshjeve mes palëve.' },
+      {
+        name: 'Marrëveshje Konfidencialiteti (NDA)',
+        desc: 'Keni dikë që kujdeset për sigurinë tuaj kibernetike? Drejtohuni tek ne dhe hartoni një marrëveshje Konfidecialiteti-NDA. SIGURONI TË DREJTAT TUAJA me NE.',
+      },
+      {
+        name: 'Marrëveshje Partneriteti',
+        desc: 'Strukturimi ligjor i partneriteteve biznesore.',
+      },
+      {
+        name: 'Marrëveshje Bashkëpunimi',
+        desc: 'Kontratë mes partnereve për realizimin e projekteve të përbashkëta.',
+      },
     ],
   },
   {
@@ -108,15 +176,55 @@ const serviceCategories = [
     icon: '🔍',
     accentColor: '#4a6a8a',
     description:
-      'Konsultimet ligjore profesionale ju ndihmojnë të kuptoni pozicionin tuaj ligjor dhe të drejtat tuaja kontraktuale para se të ndërmerrni veprime. Ofrojmë analiza të thelluara të rasteve tuaja.',
+      'Konsultime ligjore profesionale · ju ndihmojmë të kuptoni pozicionin tuaj ligjor dhe të drejtat tuaja kontraktuale para se të ndërmerrni veprime. Ofrojmë kërkime ligjore në bashkëpunim me: AVOKAT — ZYRA LIGJORE DHE INDIVID.',
     services: [
-      { name: 'Padi Komerciale', desc: 'Vlerësim i rasteve të kontesteve tregtare kontraktuale dhe rekomandime strategjike.' },
+      {
+        name: 'Vlerësime Ligjore & Kërkime',
+        desc: 'Vlerësime ligjore rreth dokumentacioneve të mbledhura mbi marrjen e një vendimi.',
+      },
+      { name: 'Padi Comerciale', desc: 'Vlerësim i rasteve të kontesteve tregtare kontraktuale dhe rekomandime strategjike.' },
       { name: 'Kontest Pune', desc: 'Analizë e marrëdhënieve të punës dhe të drejtave kontraktuale të punëmarrësit.' },
       { name: 'Ndarje Trashëgimie', desc: 'Vlerësim ligjor kontraktual i rasteve të trashëgimisë dhe ndarjes së pasurisë.' },
-      { name: 'Ngritje Padie për Fitimin e Humbur', desc: 'Vlerësim i dëmeve materiale dhe të drejtës për kompensim kontraktual.' },
-      { name: 'Shpërblim Dëmi Material dhe Moral', desc: 'Analizë e bazave ligjore kontraktuale për kërkimin e kompensimit.' },
-      { name: 'Cenim i Dinjitetit', desc: 'Vlerësim i rasteve të cënimit të dinjitetit personal dhe profesional.' },
-      { name: 'Pasurimi pa Bazë Ligjore', desc: 'Vlerësim i rasteve kur person ose kompani dyshohet për pasurimit të paligjshëm.' },
+      { name: 'Parashkrime', desc: 'Vlerësim i afateve ligjore të parashkrimit dhe ndikimit në të drejtat tuaja kontraktuale.' },
+      {
+        name: 'Ngritje Padie për Fitimin e Humbur; Shpërblim Dëmi Material dhe Moral',
+        desc: 'Vlerësim i dëmeve materiale dhe morale dhe të drejtës për kompensim kontraktual.',
+      },
+      { name: 'Ngritje Padie për Cenim Dinjiteti', desc: 'Vlerësim i rasteve të cënimit të dinjitetit personal dhe profesional.' },
+      {
+        name: 'Ngritje Padie mbi Lëndime në Vendin e Punës',
+        desc: 'Lidhur me kontratat e punës dhe sigurimi në punë.',
+      },
+      {
+        name: 'Invaliditeti — Siguria dhe Ligji',
+        desc: 'Mbrojtja e të drejtave të pronareve të biznesit lidhur me invaliditetin dhe sigurimet.',
+      },
+      {
+        name: 'Respektimi i Kontratave të Punës',
+        desc: 'Përdorimi i mjeteve të sigurisë, paralajmerimet dhe zbatimet e masave të sigurimit.',
+      },
+      {
+        name: 'Vlerësim Ligjor — Pasurimi pa Bazë Ligjore',
+        desc: 'Rritja e pasurisë ose kursimi në pasurinë e një personi, duke u zvogëluar pasurinë e personit tjetër pa bazë të vlefshme juridike. Si mund të zhvillohet kjo në marrëdhënje kontraktuale dhe si mund të shmangim apo zgjidhim duke përfituar nga pasurimi me bazë ligjore edhe në fushen e real estate e më gjërë?',
+      },
+    ],
+  },
+  {
+    id: 'kontrate-pune',
+    title: 'Kontratë Pune',
+    icon: '✍',
+    accentColor: '#8a6a4a',
+    description:
+      'AV CONTRACTS mund të hartoj për ju Kontraten e përcaktuar sipas pozicionit individual të punëmarrësit dhe përgjësive solidare mbi të drejtat dhe detyrimet në punë, në përmbushjen e ligjit të punes dhe sigurisë në punë.',
+    services: [
+      {
+        name: 'Kontratë Pune me Përgjegjësi Solidare',
+        desc: 'Kush përgjigjet për dëmin të cilin ia shkakton personit të tretë punëmarrësi në punë ose lidhur me punën? Si kualifikohen përgjegjësitë brenda përshkrimit të të drejtave dhe detyrimeve kontraktuale? Si ju ndihmon kjo të keni parasysh edhe rastet e paparashikuara për të dyja palet me përgjegjësi solidare.',
+      },
+      {
+        name: 'SHMANGI PROBLEMET',
+        desc: 'Shkruani marrëveshjet më heret se sa ngjarjet e parashikuara.',
+      },
     ],
   },
 ]

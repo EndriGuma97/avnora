@@ -5,15 +5,15 @@ const services = [
   {
     icon: '⚖',
     title: 'Kontrata Familjare',
-    items: ['Parakontratë Martesore', 'Kontratë për Mbajtjen e Përjetshme', 'Kontratë për Dhuraten'],
+    items: ['Kontratë Paramartesore', 'Kontratë për Mbajtjen e Përjetshme', 'Kontratë Dhurate'],
     href: '/sherbimet#familjare',
     accentColor: '#c4a882',
     category: 'familjare',
   },
   {
     icon: '📋',
-    title: 'Kontrata Komerciale',
-    items: ['Kontratë Furnizimi', 'Kontratë Shitje-blerje', 'Kontratë Vepre', 'Franshizingu & Komision'],
+    title: 'Kontrata Comerciale',
+    items: ['Kontratë Furnizimi', 'Kontratë Shitje-blerje', 'Kontratë Vepre', 'Kontratë Frashizingu/Komisioni'],
     href: '/sherbimet#comerciale',
     accentColor: '#5b8fa8',
     category: 'komerciale',
@@ -21,7 +21,7 @@ const services = [
   {
     icon: '🏛',
     title: 'Real Estate',
-    items: ['Kontratë Ndërtimi', 'Kontratë Qiraje', 'Shitblerje Pasurie', 'Kontratë Huaje'],
+    items: ['Kontratë Qiraje', 'Kontratë Shitblerje Paluajshmërie', 'Kontratë Ndërtimi', 'Kontratë Huaje'],
     href: '/sherbimet#real-estate',
     accentColor: '#7a9a6a',
     category: 'real-estate',
@@ -29,7 +29,7 @@ const services = [
   {
     icon: '📝',
     title: 'Ankesa & Peticione',
-    items: ['Kërkesa & Lutje', 'Vendime Administrative', 'Aneks Kontrata', 'Procesverbale'],
+    items: ['Ankesa & Lutje', 'Vendime Administrative', 'Peticione', 'Aneks Kontrata & Procesverbale'],
     href: '/sherbimet#ankesa',
     accentColor: '#8a8aaa',
     category: 'ankesa',
@@ -37,7 +37,7 @@ const services = [
   {
     icon: '🤝',
     title: 'Marrëveshje',
-    items: ['Marrëveshje Bashkëpunimi', 'Marrëveshje Konfidencialiteti', 'Marrëveshje Partneriteti'],
+    items: ['Marrëveshje Konfidencialiteti', 'Marrëveshje Bashkëpunimi', 'Marrëveshje Partneriteti'],
     href: '/sherbimet#marreveshje',
     accentColor: '#a07a6a',
     category: 'marreveshje',
@@ -45,7 +45,7 @@ const services = [
   {
     icon: '🔍',
     title: 'Konsultime Ligjore',
-    items: ['Padi Komerciale', 'Kontest Pune', 'Ndarje Trashëgimie', 'Shpërblim Dëmi'],
+    items: ['Vlerësime Ligjore', 'Padi Comerciale', 'Kontest Pune', 'Ndarje Trashëgimie'],
     href: '/sherbimet#konsultime',
     accentColor: '#4a6a8a',
     category: 'konsultime',
@@ -56,17 +56,17 @@ const values = [
   {
     symbol: 'K',
     title: 'Kuptueshmëri',
-    desc: 'Çdo kontratë shpjegohet në mënyrë të qartë dhe të kuptueshme, pa gjuhë teknike të panevojshme.',
+    desc: 'Çdo Kontratë shpjegohet në mënyrë të qartë dhe të kuptueshme pa gjuhë teknike e të pa nevojshme që lënë hapsirë për interpretime në kundërshtim me intersat e paleve kontraktuese.',
   },
   {
     symbol: 'S',
     title: 'Siguri',
-    desc: 'Kontratat tuaja hartohen me kujdesin maksimal për të mbrojtur interesat tuaja ligjore plotësisht.',
+    desc: 'Siguria e një Kontrate qendron në hartimin e duhur të legjislacionit kohor, lëndor e territorial. AI i vë në pikëpyetje këtë Siguri. Hartoni Kontraten me ne që të keni Siguri digjitale dhe legjislative.',
   },
   {
     symbol: 'S',
     title: 'Saktësi',
-    desc: 'Çdo klauzolë, term dhe detaj shqyrtohet me precizion për të siguruar vlefshmërinë e plotë ligjore.',
+    desc: 'Çdo detaj apo term i një çështje, shqyrtohet me precizitet të tillë që tju garantoj aplikim të sakt ligjor dhe mbrojtje juridike në kohë.',
   },
 ]
 
