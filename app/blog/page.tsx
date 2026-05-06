@@ -50,13 +50,14 @@ export default async function BlogPage() {
           >
             ARTIKUJ
           </h1>
-          <div className="gold-divider mt-6 mb-8" />
+          <div className="gold-divider mt-6 mb-4" />
+          <p className="text-[#c4a882] mb-6" style={{ fontSize: '20px', letterSpacing: '6px' }}>····✍️</p>
           <p
             className="text-[#5a6272] max-w-xl mx-auto leading-relaxed"
             style={{ fontSize: '15px' }}
           >
-            Informacione dhe këshilla ligjore nga ekspertja jonë. Qëndroni të informuar
-            mbi të drejtat tuaja kontraktuale dhe ligjore.
+            Artikuj informues dhe këshilla ligjore nga profesionistja-ekspertja jonë.
+            Qëndroni të përditësuar me artikujt tanë · Mbajeni SUKSESIN TË PËRQENDRUAR NË SIGURI.
           </p>
         </div>
       </section>
