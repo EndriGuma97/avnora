@@ -162,7 +162,7 @@ export default function KontaktPage() {
 function ContactForm() {
   return (
     <form
-      action="https://formsubmit.co/av.contracts.ks@gmail.com"
+      action="https://formsubmit.co/andrewgouma@gmail.com"
       method="POST"
       className="space-y-4 md:space-y-5"
     >
