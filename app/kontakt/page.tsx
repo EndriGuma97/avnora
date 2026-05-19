@@ -162,14 +162,14 @@ export default function KontaktPage() {
 function ContactForm() {
   return (
     <form
-      action="https://formsubmit.co/andrewgouma@gmail.com"
+      action="https://api.web3forms.com/submit"
       method="POST"
       className="space-y-4 md:space-y-5"
     >
-      <input type="hidden" name="_subject" value="Mesazh i ri nga faqja AV Contracts" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://www.avcontractsks.com/kontakt?sent=true" />
-      <input type="text" name="_honey" style={{ display: 'none' }} />
+      <input type="hidden" name="access_key" value="2bf6fda8-c1a9-48fb-b58c-fdf9e3e2f6f0" />
+      <input type="hidden" name="subject" value="Mesazh i ri nga faqja AV Contracts" />
+      <input type="hidden" name="redirect" value="https://www.avcontractsks.com/kontakt?sent=true" />
+      <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
 
       <div>
         <label
